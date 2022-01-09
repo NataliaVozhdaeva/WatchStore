@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header_style.css">
+  <link rel="stylesheet" href="styles/main_style.css">
   <title>Watch</title>
 </head>
 
@@ -32,35 +33,37 @@
     </ul>
   </nav>
   <nav class="page-header__user-nav user-nav">
-    <ul class="user-nav__list">
-      <li class="user-nav__item">
-        <a class="user-nav__link" href="#">Поиск</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link" href="#">Избранное</a>
-      </li>
-      <li class="user-nav__item">
-        <a class="user-nav__link" href="#">Корзина</a>
-      </li>
-    </ul>
+      <a class="user-nav__link" href="#"> 
+        <img src="img/Vector.jpg" alt="поиск" >
+      </a>
+      <a class="user-nav__link" href="#">
+        <img src="img/Vector-2.jpg" alt="избранное" >
+      </a>
+      <a class="user-nav__link" href="#" >
+        <img src="img/Vector-1.jpg" alt="корзина" >
+      </a>
   </nav>
 </header>
 
 <main class="main">
   <section class="promo">
-    <h2 class="promo__title">Весна/Лето 2019</h2>
-    <p class="promo__sub-title">Коллекция</p>
-    <p class="promo__description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
-    <a class="promo__link button button--dark" href="#">Смотреть каталог</a>
-    <img class="promo__img" src="img/watch_main.jpg" alt="Тёмные часы с сапфировым стеклом из новой коллекции" width="502" height="804">
-    <span class="promo__price">22 000
-      <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.04761 0.500854H6.03569C7.72543 0.500854 9.09524 1.87066 9.09524 3.5604C9.09524 5.25014 7.72543 6.61995 6.03569 6.61995H2.04761V0.500854Z" stroke="#1B1A17"/>
-        <path d="M2 6.50085H0" stroke="#1B1A17"/>
-        <path d="M2.00006 0.000854492V13.0009M0.30957 9.69562H6.80958" stroke="#1B1A17"/>
-      </svg>
-    </span>
-    <span class="promo__characteristics">28 мм диаметр</span>
+    <div class='promo__info'>
+      <h2 class="promo__title">Весна/Лето 2019</h2>
+      <p class="promo__sub-title">Коллекция</p>
+      <p class="promo__description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+      <a class="promo__link button button--dark" href="#">Смотреть каталог</a>
+    </div>
+    <div class="promo__item">
+      <img class="promo__img" src="img/watch_main.jpg" alt="Тёмные часы с сапфировым стеклом из новой коллекции" width="502" height="804">
+      <span class="promo__price">22 000
+        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.04761 0.500854H6.03569C7.72543 0.500854 9.09524 1.87066 9.09524 3.5604C9.09524 5.25014 7.72543 6.61995 6.03569 6.61995H2.04761V0.500854Z" stroke="#1B1A17"/>
+          <path d="M2 6.50085H0" stroke="#1B1A17"/>
+          <path d="M2.00006 0.000854492V13.0009M0.30957 9.69562H6.80958" stroke="#1B1A17"/>
+        </svg>
+      </span>
+      <span class="promo__characteristics">28 мм диаметр</span>
+    </div>
   </section>
   
   <section class="popular">

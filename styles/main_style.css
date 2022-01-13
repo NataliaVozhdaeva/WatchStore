@@ -1,17 +1,22 @@
 .promo {
   display: flex;
   justify-content: space-between;
-  padding: 0 114px;
+  margin: 0 120px;
+  position: relative;
 }
 
 .promo__item {
-  position: relative;
   width: 650px;
+  margin-right: 50px;
+}
+
+.promo__description {
+  width: 260px;
 }
 
 .promo__price {
   position: absolute;
-  right: 600px;
+  right: 583px;
   top: 138px;
   width: 80px;
 }
@@ -23,7 +28,7 @@
   height: 0;
   border-bottom: 1px solid #8b8371;
   display: inline-block;
-  top: 8px;
+  top: 9px;
   margin-left: 11px;
 }
 
@@ -55,6 +60,10 @@
   margin-top: 64px;
 }
 
+.promo__title {
+  white-space: nowrap;
+}
+
 .promo__title::before {
   position: absolute;
   content: "";
@@ -64,4 +73,32 @@
   display: inline-block;
   top: 30px;
   left: -60px;
+}
+
+.popular__title {
+  margin: 76px auto 52px;
+  width: 306px;
+}
+
+.popular__show-more {
+  display: block;
+  width: 105px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c4c0b6;
+  margin-left: auto;
+  margin-right: 98px;
+}
+
+.popular__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 79px 98px 86px;
+}
+
+.popular__item {
+  width: 313px;
+}
+
+.card {
+  display: grid;
 }

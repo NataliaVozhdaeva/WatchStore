@@ -1,8 +1,44 @@
 .promo {
+  font-family: "Playfair Display", serif;
+  color: #1b1a17;
   display: flex;
   justify-content: space-between;
   margin: 0 120px;
   position: relative;
+  background: url(../img/elipse_main.jpg) no-repeat -70px 0px;
+}
+
+.promo__title {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.promo__title::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 0;
+  border-bottom: 1px solid #8b8371;
+  display: inline-block;
+  top: 30px;
+  left: -60px;
+}
+
+.promo__sub-title {
+  font-size: 30px;
+  margin-top: 16px;
+}
+
+.promo__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  width: 260px;
+  color: rgba(27, 26, 23, 0.82);
+  margin-top: 39px;
 }
 
 .promo__item {
@@ -10,11 +46,20 @@
   margin-right: 50px;
 }
 
-.promo__description {
-  width: 260px;
+.promo__info {
+  margin: 236px 120px;
+  position: relative;
+}
+
+.promo__link {
+  display: inline-block;
+  margin-top: 64px;
 }
 
 .promo__price {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: serif;
   position: absolute;
   right: 583px;
   top: 138px;
@@ -33,6 +78,9 @@
 }
 
 .promo__characteristics {
+  font-size: 16px;
+  font-family: serif;
+  line-height: 22px;
   position: absolute;
   right: 0;
   bottom: 145px;
@@ -50,43 +98,9 @@
   right: 122px;
 }
 
-.promo__info {
-  margin: 236px 120px;
-  position: relative;
-}
-
-.promo__link {
-  display: inline-block;
-  margin-top: 64px;
-}
-
-.promo__title {
-  white-space: nowrap;
-}
-
-.promo__title::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 0;
-  border-bottom: 1px solid #8b8371;
-  display: inline-block;
-  top: 30px;
-  left: -60px;
-}
-
 .popular__title {
-  margin: 76px auto 52px;
+  margin: 76px auto 0;
   width: 306px;
-}
-
-.popular__show-more {
-  display: block;
-  width: 105px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #c4c0b6;
-  margin-left: auto;
-  margin-right: 98px;
 }
 
 .popular__list {
@@ -95,10 +109,146 @@
   padding: 79px 98px 86px;
 }
 
+.popular__show-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+
+  display: block;
+  width: 105px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c4c0b6;
+  margin-left: auto;
+  margin-right: 98px;
+}
+
 .popular__item {
   width: 313px;
+  background-color: #fdfdfb;
 }
 
 .card {
+  font-family: "Playfair Display", serif;
   display: grid;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__price {
+  font-size: 12px;
+  font-family: serif;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.card__link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #1b1a17;
+  position: relative;
+  padding-left: 50px;
+}
+
+.card__link::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 0px;
+  top: 11px;
+  left: 0px;
+  border: 1px solid #8b8371;
+}
+
+.card__img {
+  filter: drop-shadow(2px 0px 1px #e2d0c4);
+  border-radius: 50%;
+}
+
+.advantages {
+  padding: 52px 222px 52px 177px;
+  background: url("../img/background_banner_1.jpg") no-repeat,
+    url("../img/background_banner.jpg") no-repeat 100%;
+}
+
+.advantagess__list {
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  display: flex;
+}
+
+.advantages__left {
+  width: 521px;
+  height: 414px;
+  margin-right: 70px;
+}
+
+.advantages__right {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__title {
+  margin: 88px 0 38px;
+}
+
+.advantages__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.advantages__link {
+  width: 132px;
+}
+
+.advantages__link:hover {
+  color: #444240;
+}
+
+.slider-control {
+  width: 60px;
+  height: 13px;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  margin-top: 20px;
+  margin-left: 375px;
+}
+
+.advantages__button {
+  border: none;
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-top: 0.5px solid #1b1a17;
+  border-left: 0.5px solid #1b1a17;
+  background: #fff;
+  cursor: pointer;
+}
+
+.arrow_prev {
+  transform: rotate(-45deg);
+}
+
+.arrow_next {
+  transform: rotate(135deg);
+}
+
+.slider-control__position {
+  margin-top: 3px;
+  display: inline-block;
+  margin: -5px 12px;
 }

@@ -172,7 +172,7 @@
 }
 
 .advantages {
-  padding: 52px 222px 52px 177px;
+  padding: 52px 222px 21px 177px;
   background: url("../img/background_banner_1.jpg") no-repeat,
     url("../img/background_banner.jpg") no-repeat 100%;
 }
@@ -251,4 +251,34 @@
   margin-top: 3px;
   display: inline-block;
   margin: -5px 12px;
+}
+
+.news-company {
+  display: flex;
+  flex-direction: row;
+  width: 1171px;
+  margin: 60px auto 0;
+}
+
+.news-company__left {
+  width: 50%;
+  margin-top: 140px;
+}
+
+.news-company__right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 3px;
+  column-gap: 10px;
+  width: 50%;
+  max-height: 500px;
+}
+
+.socials__list {
+  display: flex;
+  padding: 0;
+  column-gap: 18px;
+  align-items: baseline;
+  margin-top: 118px;
 }

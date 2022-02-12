@@ -98,6 +98,7 @@ img {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .heading {
@@ -170,7 +171,7 @@ ul {
   justify-content: space-between;
 }
 
-.logo {
+.main-nav__logo {
   display: inline-block;
   margin-right: 265px;
 }

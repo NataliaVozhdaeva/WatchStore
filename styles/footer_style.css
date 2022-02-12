@@ -1,0 +1,6 @@
+.page-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 87px 182px 67px;
+}

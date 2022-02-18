@@ -155,10 +155,6 @@ ul {
   color: #ffffff;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .page-header {
   display: flex;
   padding: 35px 98px;

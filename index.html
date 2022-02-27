@@ -160,10 +160,50 @@
       </section>
     </div>
     <div class="news-company__right">
-      <a href="#"><img class="news-company__img" src="img/photo_1.jpg" alt="Описание фото" width="242" height="228"></a>
-      <a href="#"><img class="news-company__img" src="img/photo_2.jpg" alt="Описание фото" width="242" height="228"></a>
-      <a href="#"><img class="news-company__img" src="img/photo_3.jpg" alt="Описание фото" width="377" height="460"></a>
+      <a href="#"><img class="news-company__img open-modal" data-modal="1" src="img/photo_1.jpg" alt="Описание фото" width="242" height="228"></a>
+      <a href="#"><img class="news-company__img open-modal" data-modal="2" src="img/photo_2.jpg" alt="Описание фото" width="242" height="228"></a>
+      <a href="#"><img class="news-company__img open-modal" data-modal="3" src="img/photo_3.jpg" alt="Описание фото" width="377" height="460"></a>
     </div>
+    <!--<section class="news-company__modal-window modal-window" data-modal="1">
+      <svg class="modal__cross modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 
+        9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+      <img class="modal-window__img" src="img/photo_banner2.jpg" alt="Описание фото">
+      <div class="modal-window__text">
+        <h2>This is news!</h2>
+        <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+          totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, 
+          explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, 
+          sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, 
+          qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi 
+          tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, 
+          nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate 
+          velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? 
+          At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum 
+          deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, 
+          similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+      </div>
+    </section>-->
+    <div class="modal-window" data-modal="1">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+      <p class="modal__title">Новость 1</p>
+    </div>
+
+    <div class="modal-window" data-modal="2">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+      <p class="modal__title">Новость 2</p>
+    </div>
+
+    <div class="modal-window" data-modal="3">
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+      <p class="modal__title">Новость 3</p>
+    </div>
+
+    <div class="overlay-modal"></div>
   </section>
 </main>
 

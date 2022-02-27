@@ -27,3 +27,31 @@ BtnPrevSlide.addEventListener('click', () => {
     showSlide(activeSlideNumber)
 })
 
+
+
+let news = document.querySelectorAll('.news-company__img');
+let modalCloseBtns = document.querySelectorAll('.js-modal-close'); 
+let overlay = document.querySelector('.overlay-modal');
+
+news.forEach(function(item) {
+    item.addEventListener('click', function(e){
+        e.preventDefault();
+        var modalName =  this.getAttribute('data-modal');
+        var modalWindow = document.querySelector('.modal-window[data-modal="'+ modalName +'"]');
+        modalWindow.classList.add('active');
+        overlay.classList.add('active');
+    });
+});
+
+modalCloseBtns.forEach(function(item){
+    item.addEventListener('click', function(){
+        this.parentElement.classList.remove('active');
+        overlay.classList.remove('active');
+    })
+})
+
+overlay.addEventListener('click', function(){
+    document.querySelector('.modal-window.active').classList.remove('active');
+    this.classList.remove('active');
+})
+

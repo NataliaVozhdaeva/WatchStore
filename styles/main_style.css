@@ -314,7 +314,6 @@
 }
 
 .overlay-modal {
-  /* opacity: 0;  */
   display: none;
   position: fixed;
   top: 0;
@@ -331,24 +330,19 @@
   display: block;
 }
 
-/*.news-company__modal-window {
-  width: 1040px;
-  height: 80vh;
+.modal__title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  margin: auto;
-  padding: 30px;
+  height: 80vh;
   text-align: justify;
+  overflow: scroll;
 }
 
 .modal-window__img {
-  width: 90vw;
-  object-fit: scale-down;
+  object-fit: cover;
   margin-bottom: 25px;
+  margin-right: 25px;
+  position: sticky;
+  top: 0;
 }
-
-.modal-window__text {
-  width: 90vw;
-}
-*/

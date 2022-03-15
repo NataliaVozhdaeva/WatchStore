@@ -28,18 +28,21 @@ BtnPrevSlide.addEventListener('click', () => {
 })
 
 
-
 let news = document.querySelectorAll('.news-company__img');
 let modalCloseBtns = document.querySelectorAll('.js-modal-close'); 
 let overlay = document.querySelector('.overlay-modal');
+
 
 news.forEach(function(item) {
     item.addEventListener('click', function(e){
         e.preventDefault();
         var modalName =  this.getAttribute('data-modal');
         var modalWindow = document.querySelector('.modal-window[data-modal="'+ modalName +'"]');
+        var imgAdress = this.getAttribute('src');
+        var modalImg = modalWindow.querySelector('.modal-window__img'); 
         modalWindow.classList.add('active');
         overlay.classList.add('active');
+        modalImg.setAttribute('src', imgAdress);
     });
 });
 
@@ -54,4 +57,3 @@ overlay.addEventListener('click', function(){
     document.querySelector('.modal-window.active').classList.remove('active');
     this.classList.remove('active');
 })
-

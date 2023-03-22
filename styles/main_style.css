@@ -1,5 +1,10 @@
+.main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 .promo {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: #1b1a17;
   display: flex;
   justify-content: space-between;
@@ -17,7 +22,7 @@
 
 .promo__title::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 0;
   border-bottom: 1px solid #8b8371;
@@ -32,7 +37,7 @@
 }
 
 .promo__description {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -68,7 +73,7 @@
 
 .promo__price::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 0;
   border-bottom: 1px solid #8b8371;
@@ -88,7 +93,7 @@
 
 .promo__characteristics::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 50px;
   height: 0;
   border-bottom: 1px solid #8b8371;
@@ -129,7 +134,7 @@
 }
 
 .card {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   display: grid;
 }
 
@@ -157,7 +162,7 @@
 }
 
 .card__link::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 30px;
   height: 0px;
@@ -173,8 +178,7 @@
 
 .advantages {
   padding: 52px 222px 21px 177px;
-  background: url("../img/background_banner_1.jpg") no-repeat,
-    url("../img/background_banner.jpg") no-repeat 100%;
+  background: url('../img/background_banner_1.jpg') no-repeat, url('../img/background_banner.jpg') no-repeat 100%;
 }
 
 .advantagess__list {
